@@ -12,6 +12,8 @@ public class FlashIfSelected : MonoBehaviour
 	private Renderer _myRenderer;
 
 	private UnitManager _unitManager;
+
+	private bool _coroutineRunning = false;
 	
 	// Use this for initialization
 	void Start ()
@@ -26,10 +28,18 @@ public class FlashIfSelected : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (_unitManager.IsSelected(gameObject))
-			StartCoroutine("Flash");
+		if (_unitManager.IsSelected(gameObject) )
+		{
+			if (!_coroutineRunning)
+			{
+				_coroutineRunning = true;
+				Debug.Log("starting Coroutine");
+				StartCoroutine("Flash");
+			}
+		}
 		else
 		{
+			_coroutineRunning = false;
 			StopAllCoroutines();
 			_myRenderer.material.color = _originalColor;
 		}

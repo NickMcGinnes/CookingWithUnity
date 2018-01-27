@@ -28,9 +28,10 @@ public class BasicUnitMovement : MonoBehaviour
 		transform.position += (_goal - transform.position).normalized * MoveSpeed * Time.deltaTime;
 
 		//My Simple Distance Check
-		//if (Vector3.Distance(transform.position, _goal) < 0.05)
-		//	transform.position = _goal;
-
+		if (Vector3.Distance(transform.position, _goal) < 0.05)
+			transform.position = _goal;
+		
+		/*
 		//his crazy radius check
 		
 			foreach (Collider obj in Physics.OverlapSphere(_goal, GoalRadius))
@@ -41,5 +42,6 @@ public class BasicUnitMovement : MonoBehaviour
 					transform.position = _goal;
 				}
 			}
+		*/
 	}
 }

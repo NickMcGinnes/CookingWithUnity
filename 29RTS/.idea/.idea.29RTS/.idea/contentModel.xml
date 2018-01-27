@@ -15,7 +15,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ActivateGameObjectsWhenSelected.cs" t="Include" />
           <e p="BasicUnitMovement.cs" t="Include" />
+          <e p="BuildUnitOnClicked.cs" t="Include" />
+          <e p="BuildUnits.cs" t="Include" />
           <e p="DeselectUnitsOnClicked.cs" t="Include" />
           <e p="DestroyOnInvisible.cs" t="Include" />
           <e p="DestroyParticleEffectWhenDone.cs" t="Include" />

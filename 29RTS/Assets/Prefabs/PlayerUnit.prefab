@@ -110,9 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1160092962035872, guid: c6032f3a23ff6bc478aabdea554580da, type: 2}
-  Speed: 100
+  Speed: 750
   FireDelay: 1
-  Radius: 5
+  Radius: 10
   Mask:
     serializedVersion: 2
     m_Bits: 256
