@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveSelectedUnitsOnRightClick : MonoBehaviour {
+public class MoveSelectedUnitsOnRightClick : MonoBehaviour
+{
+
+	public GameObject MoveEffectObject;
 	
 	private UnitManager _unitManager;
 
@@ -13,10 +16,14 @@ public class MoveSelectedUnitsOnRightClick : MonoBehaviour {
 	
 	void RightClicked(Vector3 clickPosition)
 	{
+		bool unitsSelected = false;
 		foreach (GameObject unit in _unitManager.GetSelectedUnits())
 		{
+			unitsSelected = true;
 			unit.SendMessage("MoveOrder", clickPosition);
 		}
+		if (unitsSelected)
+		Instantiate(MoveEffectObject, clickPosition, MoveEffectObject.transform.rotation);
 		
 	}
 }

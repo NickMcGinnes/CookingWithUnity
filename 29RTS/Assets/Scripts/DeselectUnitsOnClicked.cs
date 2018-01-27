@@ -13,6 +13,6 @@ public class DeselectUnitsOnClicked : MonoBehaviour {
 
 	void Clicked()
 	{
-		_unitManager.DeselectUnits();
+		_unitManager.DeselectAllUnits();
 	}
 }

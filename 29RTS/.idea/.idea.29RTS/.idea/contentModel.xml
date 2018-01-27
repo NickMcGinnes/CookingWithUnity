@@ -17,9 +17,14 @@
         <e p="Scripts" t="Include">
           <e p="BasicUnitMovement.cs" t="Include" />
           <e p="DeselectUnitsOnClicked.cs" t="Include" />
+          <e p="DestroyOnInvisible.cs" t="Include" />
+          <e p="DestroyParticleEffectWhenDone.cs" t="Include" />
           <e p="DetectClicksAndTouches.cs" t="Include" />
+          <e p="FlashIfSelected.cs" t="Include" />
+          <e p="FlashMaterial.cs" t="Include" />
           <e p="MoveSelectedUnitsOnRightClick.cs" t="Include" />
           <e p="SelectPlayerUnitOnClicked.cs" t="Include" />
+          <e p="ShootAtUnitsInRange.cs" t="Include" />
           <e p="UnitManager.cs" t="Include" />
         </e>
       </e>

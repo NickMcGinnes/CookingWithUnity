@@ -18,22 +18,29 @@ public class UnitManager : MonoBehaviour
 		SelectedUnits.Clear();
 	}
 
-	public void DeselectUnits()
+	public bool IsSelected(GameObject unit)
 	{
-		SelectedUnits.Clear();
+		if (SelectedUnits.Contains(unit))
+			return true;
+		else
+			return false;
 	}
-
+	
 	public void SelectSingleUnit(GameObject unit)
 	{
 		SelectedUnits.Clear();
-		
 		SelectedUnits.Add(unit);
-		//Debug.Log(SelectedUnits);
 	}
 	
 	public void SelectAdditionalUnit(GameObject unit)
 	{	
 		SelectedUnits.Add(unit);
-		//Debug.Log(SelectedUnits);
 	}
+
+	public void DeselectAllUnits()
+	{
+		SelectedUnits.Clear();
+	}
+
+	
 }
