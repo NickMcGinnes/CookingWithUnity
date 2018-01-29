@@ -22,12 +22,13 @@ GameObject:
   - component: {fileID: 33935812350467114}
   - component: {fileID: 135419287441346254}
   - component: {fileID: 23933016480612476}
-  - component: {fileID: 114588051073324232}
   - component: {fileID: 114901742377689564}
   - component: {fileID: 114880631477870802}
+  - component: {fileID: 114948806433990248}
+  - component: {fileID: 114586887142267856}
   m_Layer: 8
   m_Name: EnemyUnit
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827468450230918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.68, z: 0}
+  m_LocalPosition: {x: 14.99, y: 0.68, z: 9.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,7 +87,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827468450230918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114588051073324232
+--- !u!114 &114586887142267856
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -94,9 +95,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1827468450230918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365e38965964caa439d1b8030d4f2820, type: 3}
+  m_Script: {fileID: 11500000, guid: d272a0324836b4b44b5f3466463c791e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 1
 --- !u!114 &114880631477870802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,13 +117,31 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827468450230918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cb2f71e8ced487408aec50b5f133171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   GoalRadius: 0.1
+--- !u!114 &114948806433990248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827468450230918}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc812bee5cbc24a8eb466af5898ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1160092962035872, guid: c6032f3a23ff6bc478aabdea554580da, type: 2}
+  Speed: 750
+  FireDelay: 1
+  Radius: 10
+  Mask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!135 &135419287441346254
 SphereCollider:
   m_ObjectHideFlags: 1

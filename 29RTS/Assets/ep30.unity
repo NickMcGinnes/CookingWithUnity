@@ -466,7 +466,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75
+  field of view: 95
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -495,7 +495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!114 &1101492463
 MonoBehaviour:
@@ -602,7 +602,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da6880765ccf86b40b17b50cc29bcd86, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1842766373
+--- !u!1001 &1802895801
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -639,7 +639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4965283933882272, guid: c83898015d5987e4e8a89f721897273e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c83898015d5987e4e8a89f721897273e, type: 2}

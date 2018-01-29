@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 198500193704342212}
   - component: {fileID: 199700364983787514}
   - component: {fileID: 54723547204810752}
-  m_Layer: 0
+  - component: {fileID: 135855124124511566}
+  - component: {fileID: 114010813150701416}
+  m_Layer: 10
   m_Name: BulletParticle
-  m_TagString: Untagged
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160092962035872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.750191, y: -3.374731e-17, z: 1.5198438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +59,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114010813150701416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160092962035872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c577a9f11e7bebc4d9f907ca1bb09f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  annihilationTags:
+  - Enemies
+  - PlayerUnits
+--- !u!135 &135855124124511566
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160092962035872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198500193704342212
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -117,7 +145,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 482167172
+  randomSeed: 1020518482
   InitialModule:
     serializedVersion: 3
     enabled: 1
