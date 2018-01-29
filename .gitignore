@@ -32,3 +32,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+29RTS/Assets/AssetStore/
+
+29RTS/Temp/
